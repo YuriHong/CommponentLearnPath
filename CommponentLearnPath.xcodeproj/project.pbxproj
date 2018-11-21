@@ -12,6 +12,15 @@
 		798D80E221A39D26009AD570 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 798D80E021A39D26009AD570 /* Main.storyboard */; };
 		798D80E421A39D2A009AD570 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 798D80E321A39D2A009AD570 /* Assets.xcassets */; };
 		798D80E721A39D2A009AD570 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 798D80E521A39D2A009AD570 /* LaunchScreen.storyboard */; };
+		798D80F721A3B93D009AD570 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 798D80F621A3B93D009AD570 /* NSString+Extension.m */; };
+		798D80FD21A3E33A009AD570 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798D80FC21A3E33A009AD570 /* BaseViewController.swift */; };
+		798D80FF21A3E362009AD570 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798D80FE21A3E362009AD570 /* LoginViewController.swift */; };
+		798D810121A3E9B1009AD570 /* AppConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798D810021A3E9B1009AD570 /* AppConfigure.swift */; };
+		798D810521A3F7E0009AD570 /* YHMarkInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798D810421A3F7E0009AD570 /* YHMarkInputView.swift */; };
+		798D810921A52920009AD570 /* LoginPrtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798D810821A52920009AD570 /* LoginPrtocols.swift */; };
+		798D810C21A52CBB009AD570 /* LoginImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798D810B21A52CBB009AD570 /* LoginImplementations.swift */; };
+		798D810E21A53675009AD570 /* BindingExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798D810D21A53675009AD570 /* BindingExtensions.swift */; };
+		798D811021A53AD9009AD570 /* LoginRxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798D810F21A53AD9009AD570 /* LoginRxViewModel.swift */; };
 		D208FE077BBFA086B15A0FFB /* Pods_CommponentLearnPath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C4E1D6ED50F7D243E0347C1 /* Pods_CommponentLearnPath.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +34,17 @@
 		798D80E321A39D2A009AD570 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		798D80E621A39D2A009AD570 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		798D80E821A39D2A009AD570 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		798D80F421A3B93B009AD570 /* CommponentLearnPath-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CommponentLearnPath-Bridging-Header.h"; sourceTree = "<group>"; };
+		798D80F521A3B93C009AD570 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		798D80F621A3B93D009AD570 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		798D80FC21A3E33A009AD570 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		798D80FE21A3E362009AD570 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		798D810021A3E9B1009AD570 /* AppConfigure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigure.swift; sourceTree = "<group>"; };
+		798D810421A3F7E0009AD570 /* YHMarkInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHMarkInputView.swift; sourceTree = "<group>"; };
+		798D810821A52920009AD570 /* LoginPrtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPrtocols.swift; sourceTree = "<group>"; };
+		798D810B21A52CBB009AD570 /* LoginImplementations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginImplementations.swift; sourceTree = "<group>"; };
+		798D810D21A53675009AD570 /* BindingExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingExtensions.swift; sourceTree = "<group>"; };
+		798D810F21A53AD9009AD570 /* LoginRxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRxViewModel.swift; sourceTree = "<group>"; };
 		FE25D1C1C18CA7817089F5E2 /* Pods-CommponentLearnPath.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommponentLearnPath.release.xcconfig"; path = "Pods/Target Support Files/Pods-CommponentLearnPath/Pods-CommponentLearnPath.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,14 +81,50 @@
 		798D80DB21A39D26009AD570 /* CommponentLearnPath */ = {
 			isa = PBXGroup;
 			children = (
+				798D80FB21A3E2F1009AD570 /* ViewController */,
+				798D80F021A3A0F5009AD570 /* Views */,
+				798D810A21A52929009AD570 /* Model */,
 				798D80DC21A39D26009AD570 /* AppDelegate.swift */,
 				798D80DE21A39D26009AD570 /* ViewController.swift */,
+				798D810021A3E9B1009AD570 /* AppConfigure.swift */,
+				798D80F521A3B93C009AD570 /* NSString+Extension.h */,
+				798D80F621A3B93D009AD570 /* NSString+Extension.m */,
 				798D80E021A39D26009AD570 /* Main.storyboard */,
 				798D80E321A39D2A009AD570 /* Assets.xcassets */,
 				798D80E521A39D2A009AD570 /* LaunchScreen.storyboard */,
 				798D80E821A39D2A009AD570 /* Info.plist */,
+				798D80F421A3B93B009AD570 /* CommponentLearnPath-Bridging-Header.h */,
 			);
 			path = CommponentLearnPath;
+			sourceTree = "<group>";
+		};
+		798D80F021A3A0F5009AD570 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				798D810421A3F7E0009AD570 /* YHMarkInputView.swift */,
+			);
+			name = Views;
+			path = View;
+			sourceTree = "<group>";
+		};
+		798D80FB21A3E2F1009AD570 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				798D80FC21A3E33A009AD570 /* BaseViewController.swift */,
+				798D80FE21A3E362009AD570 /* LoginViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		798D810A21A52929009AD570 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				798D810821A52920009AD570 /* LoginPrtocols.swift */,
+				798D810B21A52CBB009AD570 /* LoginImplementations.swift */,
+				798D810D21A53675009AD570 /* BindingExtensions.swift */,
+				798D810F21A53AD9009AD570 /* LoginRxViewModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		A6685B55AF5B98E38DFEB20B /* Frameworks */ = {
@@ -122,6 +178,7 @@
 				TargetAttributes = {
 					798D80D821A39D26009AD570 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -166,13 +223,31 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CommponentLearnPath/Pods-CommponentLearnPath-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SipHash/SipHash.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/secp256k1.swift/secp256k1.framework",
+				"${BUILT_PRODUCTS_DIR}/web3swift/web3swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BigInt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SipHash.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/secp256k1.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/web3swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -209,7 +284,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				798D80DF21A39D26009AD570 /* ViewController.swift in Sources */,
+				798D810C21A52CBB009AD570 /* LoginImplementations.swift in Sources */,
+				798D80FD21A3E33A009AD570 /* BaseViewController.swift in Sources */,
+				798D810121A3E9B1009AD570 /* AppConfigure.swift in Sources */,
+				798D80F721A3B93D009AD570 /* NSString+Extension.m in Sources */,
+				798D811021A53AD9009AD570 /* LoginRxViewModel.swift in Sources */,
+				798D80FF21A3E362009AD570 /* LoginViewController.swift in Sources */,
+				798D810921A52920009AD570 /* LoginPrtocols.swift in Sources */,
 				798D80DD21A39D26009AD570 /* AppDelegate.swift in Sources */,
+				798D810521A3F7E0009AD570 /* YHMarkInputView.swift in Sources */,
+				798D810E21A53675009AD570 /* BindingExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,16 +440,20 @@
 			baseConfigurationReference = 0800C0573349DECEB31D3A96 /* Pods-CommponentLearnPath.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CommponentLearnPath/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.trs.CommponentLearnPath;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CommponentLearnPath/CommponentLearnPath-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -374,16 +462,19 @@
 			baseConfigurationReference = FE25D1C1C18CA7817089F5E2 /* Pods-CommponentLearnPath.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CommponentLearnPath/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.trs.CommponentLearnPath;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CommponentLearnPath/CommponentLearnPath-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
