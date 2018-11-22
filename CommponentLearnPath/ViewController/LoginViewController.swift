@@ -12,12 +12,12 @@ import RxCocoa
 
 
 class LoginViewController: BaseViewController {
-
+    
     let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         
         let r = String.randomString(16)
@@ -98,6 +98,48 @@ class LoginViewController: BaseViewController {
             make.height.equalTo(ScaleH(41))
         }
         
+        let textfield = UITextField(frame: .zero)
+        textfield.borderStyle = .roundedRect
+        view.addSubview(textfield)
+        
+        textfield.snp.makeConstraints { (make) in
+            make.left.right.equalToSuperview()
+            make.bottom.equalTo(loginBt.snp.top).offset(-20)
+            make.height.equalTo(40)
+        }
+        
+        let viewModel = YHLoginViewModel(inputs: (textfield.rx.text.orEmpty.asObservable(), textfield.rx.text.orEmpty.asObservable()))
+        
+        viewModel.userNameValidationStatus.subscribe(onNext: { (status) in
+            print("---->")
+            switch status {
+            case let .ok(message):
+                print(message)
+            case let .failed(msg):
+                print(msg)
+            case .empty:
+                break
+            case .validating:
+                break
+            }
+        })
+            .disposed(by: disposeBag)
+        
+//        viewModel.userNameValidationStatus.subscribe(onNext: { (status) in
+//            print("第二次验证")
+//            switch status {
+//            case let .ok(message):
+//                print(message)
+//            case let .failed(msg):
+//                print(msg)
+//            case .empty:
+//                break
+//            case .validating:
+//                break
+//            }
+//        })
+//            .disposed(by: disposeBag)
+        
         loginBt.rx
             .tap
             .subscribe(onNext: { (_) in
@@ -105,15 +147,15 @@ class LoginViewController: BaseViewController {
             })
             .disposed(by: disposeBag)
     }
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
