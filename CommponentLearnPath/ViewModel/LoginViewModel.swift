@@ -26,7 +26,7 @@ class YHLoginViewModel {
         )) {
         
         userNameValidationStatus = inputs.name
-            .filter({ $0.count == 11})
+//            .filter({ $0.count == 11})
             .map({ (name) in
             return YHLoginValitionService.userNameValition(name)
         })
